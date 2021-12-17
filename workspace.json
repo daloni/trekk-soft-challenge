@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "github-search-challenge": "apps/github-search-challenge",
+    "github-search-challenge-e2e": "apps/github-search-challenge-e2e"
+  }
+}

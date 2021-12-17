@@ -1,0 +1,28 @@
+{
+  "root": "apps/github-search-challenge-e2e",
+  "sourceRoot": "apps/github-search-challenge-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/github-search-challenge-e2e/cypress.json",
+        "devServerTarget": "github-search-challenge:serve"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "github-search-challenge:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/github-search-challenge-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["github-search-challenge"]
+}
