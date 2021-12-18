@@ -11,7 +11,7 @@
         "compiler": "babel",
         "outputPath": "dist/apps/github-search-challenge",
         "index": "apps/github-search-challenge/src/index.html",
-        "baseHref": "/",
+        "baseHref": "/trekk-soft-challenge/",
         "main": "apps/github-search-challenge/src/main.tsx",
         "polyfills": "apps/github-search-challenge/src/polyfills.ts",
         "tsConfig": "apps/github-search-challenge/tsconfig.app.json",
