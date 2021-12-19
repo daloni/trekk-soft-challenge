@@ -1,4 +1,4 @@
-
+[![Coverage Status](https://coveralls.io/repos/github/daloni/trekk-soft-challenge/badge.svg)](https://coveralls.io/github/daloni/trekk-soft-challenge)
 
 # TrekkSoft
 
