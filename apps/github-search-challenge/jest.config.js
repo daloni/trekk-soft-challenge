@@ -13,4 +13,6 @@ module.exports = {
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
   coverageDirectory: '../../coverage/apps/github-search-challenge',
   coverageReporters: ['html', 'lcovonly', 'text-summary'],
+  setupFiles: ['./jest.setup.ts'],
+  restoreMocks: true,
 };
