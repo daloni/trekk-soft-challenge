@@ -1,21 +1,19 @@
+import { getStore } from '@github-search-challenge/app/shared/reducers/store';
 import { render, RenderResult } from '@testing-library/react';
 import { Provider } from 'react-redux';
+import Search from './search';
 
-import App from './app';
-import { getStore } from './shared/reducers/store';
-
-describe('App', () => {
+describe('Search', () => {
   function renderComponent(): RenderResult {
     return render(
       <Provider store={getStore()}>
-        <App />
+        <Search />
       </Provider>
     );
   }
 
   it('should render successfully', () => {
     const { baseElement } = renderComponent();
-
     expect(baseElement).toBeTruthy();
   });
 });

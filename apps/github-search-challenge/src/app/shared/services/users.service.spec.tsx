@@ -5,7 +5,7 @@ import {
 } from './users.service';
 import { FetchMock } from 'jest-fetch-mock';
 import { PaginationInterface } from '../interfaces/pagination.interface';
-import { UsersInterface } from '../interfaces/user.interface';
+import { UserInterface } from '../interfaces/user.interface';
 
 describe('Users Service', () => {
   const request: SearchUsersQueryParamsInterface = {
@@ -25,7 +25,7 @@ describe('Users Service', () => {
   });
 
   it('should request to url', async () => {
-    const response: PaginationInterface<UsersInterface> = {
+    const response: PaginationInterface<UserInterface> = {
       total_count: 100,
       incomplete_results: false,
       items: [

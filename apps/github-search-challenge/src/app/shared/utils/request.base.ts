@@ -4,7 +4,7 @@ export const baseCall = async <T>(
   request: RequestInterface,
   rest: RequestInit = {}
 ): Promise<T> => {
-  const response = await window.fetch(
+  const response = await fetch(
     request.url,
     {
       headers: {

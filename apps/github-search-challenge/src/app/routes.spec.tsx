@@ -1,14 +1,14 @@
 import { render, RenderResult } from '@testing-library/react';
 import { Provider } from 'react-redux';
 
-import App from './app';
+import AppRoutes from './routes';
 import { getStore } from './shared/reducers/store';
 
-describe('App', () => {
+describe('AppRoutes', () => {
   function renderComponent(): RenderResult {
     return render(
       <Provider store={getStore()}>
-        <App />
+        <AppRoutes />
       </Provider>
     );
   }
